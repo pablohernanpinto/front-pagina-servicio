@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <section class='columnaIzquierda animate-left'>
+            <app-titulos texto="Tu equipo de expertos" color="black"></app-titulos>
+        </section>
+
+        <section class='columnaDerecha animate-right'>
+            <p>
+                Esta página debe centrarse en el despacho de abogados o en los antecedentes del abogado.
+                Puedes hablar sobre la historia, la trayectoria e incluso los principios que rigen al despacho o al
+                abogado.
+                Esta página debe centrarse en el despacho de abogados o en los antecedentes del abogado.
+                Puedes hablar sobre la historia, la trayectoria e incluso los principios que rigen al despacho o al
+                abogado.
+            </p>
+            <div class="boton">
+                <app-botones [text]="'Reserva tu asesoría'" [color]="'black'" (clicked)="funcionPrueba()"></app-botones>
+            </div>
+            
+        </section>
+
+    </div>
+
+
+
+</body>
+
+</html>

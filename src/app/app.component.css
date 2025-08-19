@@ -1,0 +1,46 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+
+.scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.slide {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  transition: background 0.5s ease;
+}
+.slide1 { 
+  background-image: url(../assets/background-1.png);
+  background-repeat: no-repeat;       /* Evita que se repita */
+  background-size: cover;             /* Hace que la imagen cubra todo el contenedor */
+  background-position: center;        /* Centra la imagen */
+  background-attachment: fixed;       /* Opcional: hace que la imagen quede fija al hacer scroll */
+}
+
+.slide2 { background: #eceff2; }
+.slide3 { background: #8d9693; }
+.slide4 { background: #eceff2; }
+.slide5 { background: white; }
+.slide6 { background: #8d9693; }
+
+.animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.animate.active {
+  opacity: 1;
+  transform: translateY(0);
+}

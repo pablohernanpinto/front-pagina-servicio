@@ -1,0 +1,67 @@
+.contenido{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 60px;
+  box-sizing: border-box;
+}
+
+.titulo{
+  padding-left: 20vh;
+  padding-top: 10vh;
+}
+
+.descripcion{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.servicio {
+  padding: 9vh;
+  flex: 0 0 calc(33.333% - 40px); /* 33.333% del ancho menos espacio para gap */
+  box-sizing: border-box;
+  margin: 10px; /* opcional: separa un poco cada tarjeta */
+  overflow: hidden;
+  
+}
+
+.columnas{
+  flex: 1;
+  box-sizing: border-box;
+}
+
+
+
+.animate-left {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 2s ease, transform 1.5s ease;
+}
+
+.animate-uno {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1.5s ease 0.4s, transform 1.5s ease 0.4s;
+}
+
+.animate-dos {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 1.5s ease 0.2s, transform 1.5s ease 0.2s;
+}
+
+.animate-tres {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.5s ease 0.6s, transform 1.5s ease 0.6s;
+}
+.animate-left.active,
+.animate-uno.active,
+.animate-dos.active,
+.animate-tres.active,
+.animate-cuatro.active {
+  opacity: 1;
+  transform: translateX(0);
+  
+}

@@ -1,0 +1,70 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    padding-inline: 20vh;
+    gap: 10vh;
+    padding-top: 5vh;
+}
+
+.columna1{
+    flex: 1
+}
+.columna2 {
+  width: 100%;
+  padding-top: 10vh;
+}
+
+.columna2 .titulo {
+  display: flex;
+  justify-content: center; /* centra solo el título */
+}
+
+.contenido{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenido p{
+    padding-top: 20vh;
+    color: aliceblue;
+    
+    
+}
+
+app-botones{
+    padding-top: 30px;
+}
+
+
+
+.animate-left {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2s ease, transform 1.5s ease;
+}
+
+
+.animate-uno {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 1.5s ease 0.4s, transform 1.5s ease 0.4s;
+}
+
+.animate-dos {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 2s ease 0.6s, transform 2s ease 0.6s;
+}
+
+
+.animate-left.active,
+.animate-uno.active,
+.animate-dos.active,
+.animate-tres.active,
+.animate-cuatro.active {
+    opacity: 1;
+    transform: translateX(0);
+}

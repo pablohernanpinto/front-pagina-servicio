@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-top: 15vh;
+  width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  padding-inline: 200px;
+}
+
+.columnaDerecha p{
+  padding-top: 15vh;
+  font-size: 25px;
+
+}
+
+.columnaDerecha .boton{
+  padding-top: 10vh;
+}
+
+
+.columnaIzquierda,
+.columnaDerecha {
+
+  flex: 1;
+  /* ocupan proporcionalmente todo el espacio */
+  box-sizing: border-box;
+  /* padding interno no rompe layout */
+}
+
+/* Animación desde la izquierda */
+.animate-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 2s ease, transform 1.5s ease;
+}
+
+/* Animación desde la derecha */
+.animate-right {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 2s ease, transform 1.5s ease;
+}
+
+/* Activar animaciones */
+.animate-left.active,
+.animate-right.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.columnaDerecha p {
+  font-family: Arial, Helvetica, sans-serif;
+}

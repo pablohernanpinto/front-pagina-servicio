@@ -1,0 +1,28 @@
+button {
+  background-color: transparent;
+  border: 2px solid aliceblue;   /* Mejor usar border completo */
+  border-radius: 30px;
+  padding: 15px 50px;
+  color: aliceblue;              /* Para que el texto se vea */
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;     /* Animación al pasar el mouse */
+  
+}
+
+/* Efecto hover */
+button:hover {
+  background-color: rgb(202, 202, 202);
+}
+
+
+.animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.animate.active {
+  opacity: 1;
+  transform: translateY(0);
+}

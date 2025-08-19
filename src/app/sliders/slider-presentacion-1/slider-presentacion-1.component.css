@@ -1,0 +1,107 @@
+.epigrafe {
+    gap: 3px;
+    padding-top: 100px;
+    padding-left: 200px;
+    display: flex;
+    flex-direction: row;
+    opacity: 0;
+    transform: translateY(20px);
+
+    /* Animación */
+    animation: fadeIn 2s ease forwards;
+    /* dura 2 segundos */
+}
+img{
+    width: 25px;
+    padding-bottom: 10px;
+
+
+}
+h2 {
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+
+h1 {
+    padding-top: 160px;
+    /* ajusta separación arriba y abajo */
+    padding-left: 200px;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+
+    /* Estado inicial de la animación */
+    opacity: 0;
+    transform: translateY(20px);
+
+    /* Animación */
+    animation: fadeInLeft 2s ease forwards;
+    /* dura 2 segundos */
+}
+
+h3 {
+
+    padding-left: 205px;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    /* más delgado */
+    letter-spacing: 6px;
+    /* más espacio entre letras */
+
+
+    /* Estado inicial de la animación */
+    opacity: 0;
+    transform: translateY(20px);
+
+    /* Animación */
+    animation: fadeIn 2s ease forwards;
+    /* dura 2 segundos */
+}
+
+.posicionB {
+    margin: 150px 0;
+    padding-left: 200px;
+
+    /* Estado inicial de la animación */
+    opacity: 0;
+    transform: translateY(20px);
+
+    /* Animación */
+    animation: zoomIn 2s ease forwards;
+    /* dura 2 segundos */
+
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
